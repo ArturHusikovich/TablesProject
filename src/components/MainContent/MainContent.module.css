@@ -1,0 +1,94 @@
+.item {
+  margin: 10px auto;
+  max-width: 1024px;
+  text-align: center;
+  background: #f2f2f2;
+}
+.btn {
+  width: 200px;
+  height: 60px;
+  background: none;
+  border: 4px solid;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.3em;
+  position: relative;
+  margin-top: 4em;
+  opacity: .5;
+}
+.btn:before, .btn:after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 4px;
+  background: #000;
+  transform: skewX(50deg);
+  transition: .4s linear;
+}
+.btn:before {
+  top: -4px;
+  left: 10%;
+}
+.btn::after {
+  bottom: -4px;
+  right: 10%;
+}
+.btn:hover::before {
+  left: 80%;
+}
+.btn:hover::after {
+  right: 80%;
+}
+.btn, .btn:active, .btn:focus {
+    outline: none;
+}
+.block{
+  background-color: #000;
+  height: 540px;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h2{
+  font-size: 2em;
+  text-shadow: 0 3px 3px #ff022c;
+}
+.changeBtn {
+  margin: .5em;
+  font-size: 1em;
+  padding: .3em 1em;
+  border-radius: 10px;
+  background: #4d4d4d;
+  color: #f2f2f2;
+  cursor: pointer;
+  border: 1px solid #ff022c;
+}
+.changeBtn:hover, .changeBtn:disabled, .changeBtn:active, .changeBtn:focus {
+  color: #4d4d4d;
+  background: #f2f2f2;
+  box-shadow: 0 0 5px 1px #ff022c;
+  outline: none;
+}
+.sortBtn {
+  margin: .6em;
+  font-size: 1em;
+  padding: .3em 1em;
+  border-radius: 10px;
+  background: #4d4d4d;
+  color: #f2f2f2;
+  cursor: pointer;
+  border: 1px solid #9dcec7;
+}
+.sortBtn:hover, .sortBtn:disabled, .sortBtn:active, .sortBtn:focus {
+  color: #4d4d4d;
+  background: #f2f2f2;
+  box-shadow: 0 0 5px 1px #9dcec7;
+  outline: none;
+}
+span{
+  font-size: 1.3em;
+  color: #4d4d4d;
+  text-shadow: 0 0 3px #ff022c;
+}

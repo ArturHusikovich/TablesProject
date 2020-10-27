@@ -1,0 +1,37 @@
+.header {
+  height: 80px;
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+.item {
+  position: relative;
+  font-size: 40px;
+  text-shadow: 0 0 5px;
+  z-index: 1;
+  overflow: hidden;
+  color: #fff;
+}
+.span {
+  color: #ff022c;
+}
+.item:before {
+  content: '';
+  position: absolute;
+  left: 120%;
+  width: 120%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent 0%, #000 10%, #000 100%);
+  animation: animate 5.5s linear forwards;
+}
+@keyframes animate {
+  0% {
+    left: -20%;
+  }
+  100% {
+    left: 120%;
+   }
+}
